@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "54c2acad-d63f-4a91-a23e-a0b60f95f9dc",
+		"name": "School",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41847856"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "addSchool",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Phoenix International School\",\r\n    \"address\": \"Kokapet, Hyderabad\",\r\n    \"latitude\": 30.8763,\r\n    \"longitude\": 34.7632\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://app-e613e921-2f2c-45b0-903a-15ea152eeca1.cleverapps.io/addSchool",
+							"protocol": "https",
+							"host": [
+								"app-e613e921-2f2c-45b0-903a-15ea152eeca1",
+								"cleverapps",
+								"io"
+							],
+							"path": [
+								"addSchool"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "53"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"35-CopXbhxXALTOlwNzEwJwzisC5fw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Aug 2025 18:04:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01K34AFCGQWZC4AA8W9R72V6RJ"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"School added successfully!\",\n    \"schoolId\": 5\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "listSchools",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://app-e613e921-2f2c-45b0-903a-15ea152eeca1.cleverapps.io/listSchools?lat=17.415&lon=78.445",
+							"protocol": "https",
+							"host": [
+								"app-e613e921-2f2c-45b0-903a-15ea152eeca1",
+								"cleverapps",
+								"io"
+							],
+							"path": [
+								"listSchools"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "17.415"
+								},
+								{
+									"key": "lon",
+									"value": "78.445"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "838"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"346-Jd+7W69H/G53Kjz85zzXLEn0Oq0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Aug 2025 18:08:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01K34APBW308469WVAZ1GCN54G"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jubilee Hills Public School\",\n        \"address\": \"Jubilee Hills, Hyderabad\",\n        \"latitude\": 17.431299209594727,\n        \"longitude\": 78.40239715576172,\n        \"distance\": 4.869703686601342\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Rockwell International School\",\n        \"address\": \"Secunderabad, Hyderabad\",\n        \"latitude\": 44.92369842529297,\n        \"longitude\": 54.981201171875,\n        \"distance\": 3757.326033098461\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Phoenix International School\",\n        \"address\": \"Kokapet, Hyderabad\",\n        \"latitude\": 30.876300811767578,\n        \"longitude\": 34.76319885253906,\n        \"distance\": 4644.515372488852\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Delhi Public School\",\n        \"address\": \"Khajaguda, Hyderabad\",\n        \"latitude\": 12.934800148010254,\n        \"longitude\": 21.9822998046875,\n        \"distance\": 6059.5779186561695\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Scholars International School\",\n        \"address\": \"Alkapur, Hyderabad\",\n        \"latitude\": 20.4768009185791,\n        \"longitude\": 15.987600326538086,\n        \"distance\": 6538.2101441320565\n    }\n]"
+				}
+			]
+		}
+	]
+}
